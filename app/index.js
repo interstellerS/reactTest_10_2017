@@ -1,7 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from 'app/components/App.jsx';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, browserHistory } from "react-router";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import injectTapEventPlugin from "react-tap-event-plugin";
 
-import './styles/main.scss';
+import reducers from "./reducers";
+import routes from "./routes";
 
-ReactDOM.render(<App />, document.getElementById('render-app'));
+import "./styles/main.scss";
+
+injectTapEventPlugin();
+
+ReactDOM.render(
+  <Provider store={createStore(reducers)}>
+    <Router history={browserHistory} routes={routes} />
+  </Provider>,
+  document.getElementById("render-app")
+);

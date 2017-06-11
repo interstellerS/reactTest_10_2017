@@ -1,0 +1,25 @@
+form > div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px 5px;
+}
+form > div > div {
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column;
+  position: relative;
+  justify-content: flex-start;
+  text-align: left;
+}
+.react-datepicker__input-container {
+  text-align: left !important;
+  display: flex !important;
+}
