@@ -31,10 +31,16 @@ Un peu de style, afin d'avoir une interface agréable.
 
 
 ## Installation des dépendances
-npm install
-
+```
+yarn install
+```
 ## Lancement de Webpack
-Linux & MacOS: npm start
-Windows: npm run start-windows
-
+```
+yarn start
+```
 http://localhost:3000
+
+## TODO :
+- gh-pages
+- liste de caractéristiques (inteligent, rapide, etc, la liste n'étant pas définie)
+- un lien http direct.
